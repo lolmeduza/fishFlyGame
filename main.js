@@ -63,6 +63,9 @@ class Game {
     this.canvas.addEventListener("touchstart", (e) => {
       this.player.flap();
       this.touchStartX = e.changedTouches[0].pageX;
+      if (this.gameOver) {
+        this.resize(window.innerWidth, window.innerHeight);
+      }
     });
     this.canvas.addEventListener("touchmove", (e) => {
       if (e.changedTouches[0].pageX - this.touchStartX > 50) {
