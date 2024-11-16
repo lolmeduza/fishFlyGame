@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2dFishGame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas1"></canvas>
+    <div class="controls">
+      <button id="resetButton">R</button>
+      <button id="fullScreenButton">F</button>
+      <button id="debugButton">D</button>
+    </div>
+
+    <div class="assets">
+      <img src="./pictures/background_single.png" id="background" />
+      <img src="./pictures/player_fish.png" id="player_fish" />
+      <img src="./pictures/smallGears.png" id="smallGears" />
+    </div>
+    <script src="background.js"></script>
+    <script src="player.js"></script>
+    <script src="obstacle.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
